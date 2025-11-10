@@ -3,3 +3,26 @@
   vertical-align: top;
   border: 1px solid salmon;
 }
+
+/* Page background: place spellbookBG.jpg at the project root (next to index.html)
+   and the site will use it as the page background. If you prefer to keep the
+   image in another folder, update the URL below accordingly. */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  /* Use absolute root path so the image can live next to index.html */
+  background-image: url("/spellbookBG.jpg");
+  background-size: cover; /* cover the viewport */
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* sensible fallback while image is missing or loading */
+  background-color: #1f1b17; /* dark parchment-ish */
+  color: #f6f0e6; /* contrast text color */
+  font-family:
+    system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* If the background image 404s, the page still looks okay. */

@@ -1,6 +1,10 @@
-import exampleIconUrl from "./noun-paperclip-7598668-00449F.png";
+import spellbookBgUrl from "./spellbookBG.jpg";
 import "./style.css";
 
-document.body.innerHTML = `
-  <p>Example image asset: <img src="${exampleIconUrl}" class="icon" /></p>
-`;
+// Set the background image
+document.body.style.backgroundImage = `url(${spellbookBgUrl})`;
+document.body.style.backgroundSize = "contain";
+document.body.style.backgroundPosition = "center";
+document.body.style.backgroundRepeat = "no-repeat";
+document.body.style.margin = "0";
+document.body.style.minHeight = "100vh";
