@@ -4,6 +4,26 @@
   border: 1px solid salmon;
 }
 
+.spell-button {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.93);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.spell-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.spell-button:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
 /* Page background: place spellbookBG.jpg at the project root (next to index.html)
    and the site will use it as the page background. If you prefer to keep the
    image in another folder, update the URL below accordingly. */
